@@ -40,7 +40,7 @@ async def forced_entry_into_groups(client, message):
                 btn = force_channel(forcesub, (await bot.get_me()).username)
                 
                 await message.reply_text(
-                    f"<b>{message.from_user.first_name}</b>ᴀɴᴅᴀ ᴅɪ ᴡᴀᴊɪʙ ᴋᴀɴ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋsᴇs ʜᴀʟᴀᴍᴀɴ ʙᴇʀɪᴋᴜᴛɴʏᴀ..",
+                    f"<b>{message.from_user.first_name}</b>/nᴀɴᴅᴀ ᴅɪ ᴡᴀᴊɪʙ ᴋᴀɴ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋsᴇs ʜᴀʟᴀᴍᴀɴ ʙᴇʀɪᴋᴜᴛɴʏᴀ..",
                     disable_web_page_preview=True, reply_markup=btn)
 
                 await message.stop_propagation()
