@@ -83,7 +83,7 @@ async def create_saweria(client, cb):
 
         data = result["data"]
         qr_url = data["qrImageUrl"]
-        timestamp = data["timestamp"]
+        timestamp = data["time"]
         amount_str = data["amount"]
         transaction_id = data["transactionId"]
         
@@ -228,5 +228,6 @@ async def id(client, message):
     await delete_pending_transaction(user_id)
     await message.reply(f"🆔 {message.chat.title} : `{message.chat.id}`")
     
+
 
 
