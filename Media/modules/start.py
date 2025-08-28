@@ -75,7 +75,7 @@ async def create_saweria(client, cb):
         user = await get_saweria()
         amount = await get_price()
 
-        url = f"https://saweria.autsc.my.id/api/create?username={user.get('username')}&amount={amount}&email={user.get('email')}"
+        url = f"https://pg-saweria.autsc.My.id/create?username={user.get('username')}&amount={amount}&email={user.get('email')}"
         
         async with httpx.AsyncClient() as req:
             response = await req.get(url)
@@ -228,3 +228,4 @@ async def id(client, message):
     await delete_pending_transaction(user_id)
     await message.reply(f"🆔 {message.chat.title} : `{message.chat.id}`")
     
+
